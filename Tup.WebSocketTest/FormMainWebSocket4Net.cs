@@ -35,7 +35,7 @@ namespace Tup.WebSocketTest
             var cookies = ParseHeaders(this.textBoxCookie.Text);
             var customHeaderItems = ParseHeaders(this.textBoxQDHeader.Text);
 
-            m_WebSocketClient = new WebSocket(path, "basic", cookies, customHeaderItems, null, null, WebSocketVersion.Rfc6455);
+            m_WebSocketClient = new WebSocket(path, "", cookies, customHeaderItems, null, null, WebSocketVersion.Rfc6455);
 
             m_WebSocketClient.Error += (sender, e) =>
             {
@@ -129,7 +129,7 @@ namespace Tup.WebSocketTest
         private void CreateWebSocketClient(int repeatCount, string path, int index,
             List<KeyValuePair<string, string>> cookies, List<KeyValuePair<string, string>> customHeaderItems)
         {
-            WebSocket webSocketClient = new WebSocket(path, "basic",
+            WebSocket webSocketClient = new WebSocket(path, "",
                 cookies, customHeaderItems, null, null, WebSocketVersion.Rfc6455);
             webSocketClient.Error += (sender, e) =>
             {
@@ -143,6 +143,8 @@ namespace Tup.WebSocketTest
             };
             webSocketClient.Closed += (sender, e) =>
             {
+                LogHelper.Debug("--------------------Closed-----==------------------e:{0}", e);
+                Console.WriteLine("--------------------Closed----==-------------------e:{0}", e);
                 SetConnectStatus(false);
             };
             webSocketClient.MessageReceived += (sender, e) =>

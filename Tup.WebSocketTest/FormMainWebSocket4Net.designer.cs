@@ -46,12 +46,12 @@
             this.progressBarConnect = new System.Windows.Forms.ProgressBar();
             this.textBoxWSUrlFormat = new System.Windows.Forms.TextBox();
             this.panelConnect = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxCookie = new System.Windows.Forms.TextBox();
             this.textBoxQDHeader = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.DefaultToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
@@ -93,9 +93,8 @@
             // 
             // labelServer
             // 
-            this.labelServer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelServer.AutoSize = true;
-            this.labelServer.Location = new System.Drawing.Point(95, 159);
+            this.labelServer.Location = new System.Drawing.Point(50, 159);
             this.labelServer.Name = "labelServer";
             this.labelServer.Size = new System.Drawing.Size(47, 12);
             this.labelServer.TabIndex = 7;
@@ -245,15 +244,6 @@
             this.panelConnect.Size = new System.Drawing.Size(501, 199);
             this.panelConnect.TabIndex = 1;
             // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Location = new System.Drawing.Point(25, 84);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 1);
-            this.panel3.TabIndex = 1;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -302,6 +292,15 @@
             this.textBoxQDHeader.Size = new System.Drawing.Size(395, 54);
             this.textBoxQDHeader.TabIndex = 4;
             this.DefaultToolTip.SetToolTip(this.textBoxQDHeader, "key1:value1\r\nkey2:value2");
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Location = new System.Drawing.Point(25, 84);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 1);
+            this.panel3.TabIndex = 1;
             // 
             // panel2
             // 
